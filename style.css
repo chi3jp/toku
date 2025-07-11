@@ -1,0 +1,350 @@
+/* 基本設定 */
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* ヘッダー */
+header {
+    background: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.thanks-message {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* 目次 */
+.toc {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.toc h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #6c7a89;
+    padding-bottom: 0.8rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #6c7a89;
+    font-weight: bold;
+    display: block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    background-color: #f4f7f6;
+    transition: all 0.3s ease;
+}
+
+.toc ul li a:hover {
+    background-color: #6c7a89;
+    color: #fff;
+}
+
+/* カードスタイル */
+.card {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 .icon {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #6c7a89;
+}
+
+/* ガイドラインカード */
+.guidelines-card {
+    background-color: #fff9e6;
+    border-left: 5px solid #ffc107;
+}
+
+.guidelines-card h2 .icon { color: #ffc107; }
+.guidelines-card ul { list-style-type: none; padding-left: 1rem; }
+.guidelines-card ul li { margin-bottom: 1rem; }
+
+/* プロンプトセクション */
+.prompt-item {
+    margin-bottom: 2rem;
+    position: relative;
+    border-left: 4px solid #6c7a89;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.prompt-item pre {
+    margin-right: 0; /* ボタンのスペースを確保しない */
+}
+
+pre {
+    background-color: #2c3e50;
+    color: #f4f7f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.copy-btn {
+    display: block; /* ブロック要素にしてpreの下に配置 */
+    margin-top: 0.5rem; /* preとの間にスペース */
+    background-color: #6c7a89;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content; /* ボタンの幅を内容に合わせる */
+}
+
+.copy-btn:hover {
+    background-color: #505a66;
+}
+
+.copy-btn-small {
+    background-color: #6c7a89;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.copy-btn-small:hover {
+    background-color: #505a66;
+}
+
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #f4f7f6;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) { background-color: #fcfcfc; }
+
+table img {
+    max-width: 80px; /* サムネイルサイズを調整 */
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+table img:hover {
+    transform: scale(1.05);
+}
+
+/* チェックリスト */
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #6c7a89;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ハッシュタグ */
+.hashtags code {
+    background-color: #eef2f5;
+    color: #6c7a89;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ボタン */
+.button {
+    display: inline-block;
+    background-color: #6c7a89;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #505a66;
+    transform: translateY(-2px);
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* Distance from bottom */
+    right: 30px; /* Distance from right */
+    z-index: 99; /* High z-index to be on top */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #6c7a89; /* Background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: #505a66; /* Darker background on hover */
+    transform: translateY(-3px);
+}
+
+#backToTopBtn a {
+    color: white;
+    text-decoration: none;
+}

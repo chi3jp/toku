@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メルマガ登録特典｜限定コンテンツページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>メルマガ登録特典</h1>
+        <p>限定コンテンツページ</p>
+    </header>
+
+    <main>
+        <p class="thanks-message">この度は、<a href="https://chi3.substack.com/about" target="_blank">こちらのサイト</a>よりメルマガにご登録いただき、誠にありがとうございます！<br>こちらは、ご登録いただいた方限定の特典コンテンツページです。</p>
+
+        <section id="guidelines" class="card guidelines-card">
+            <h2><span class="icon">📜</span> ご利用にあたってのお願い</h2>
+            <p>この特典コンテンツは <strong>メルマガ登録者さま限定</strong> の非公開資料です。快適にご活用いただくため、下記のルールをお守りください。</p>
+            <ul>
+                <li><strong>個人利用の範囲内でご使用ください</strong><br>SUZURI の販売や Midjourney の制作に役立てる目的であれば、作品づくり・勉強・検証など自由にお使いいただけます。</li>
+                <li><strong>転載・再配布・二次販売は禁止です</strong><br>本文・画像・コード・sref などを、そのまま／一部改変を問わず SNS・ブログ・動画・書籍・販売教材などへ公開することはできません。</li>
+                <li><strong>チームや友人との共有もご遠慮ください</strong><br>複数名でご利用になりたい場合は、各自でメルマガ登録をお願いします。</li>
+                <li><strong>引用が必要な場合は事前にご相談ください</strong><br>例外的に紹介やレビューをしたい場合は、必ず事前にご連絡ください。許可のない引用は全て転載扱いとなります。</li>
+            </ul>
+            <p>著作権は発行者に帰属します。ルールをお守りいただけない場合、今後の配布を見送る場合がありますのでご了承ください。</p>
+        </section>
+
+        <nav class="toc" id="contents-list">
+            <h2>コンテンツ一覧</h2>
+            <ul>
+                <li><a href="#ai-prompts">AIとの対話プロンプト集</a></li>
+                <li><a href="#midjourney-srefs">Midjourney srefコード集</a></li>
+                <li><a href="#suzuri-guide">SUZURI 売れるデザイン＆企画ガイド</a></li>
+                <li><a href="#chrome-extension">Chrome拡張機能 要件定義書</a></li>
+            </ul>
+        </nav>
+
+        <section id="ai-prompts" class="card">
+            <h2><span class="icon">🗨️</span> やりたいことが見えてくるAIとの対話プロンプト集</h2>
+            <p>モヤモヤ・迷い・アイデア不足に効く3つの問いかけ。コピーしてAIチャットに貼り付けてお使いください。</p>
+            <div class="prompt-item">
+                <h3>① 気持ちがもやもやしているときに</h3>
+                <p>「なぜ？」と聞かれると答えづらいときに。気持ちを押しつけず、引き出してくれます。</p>
+                <pre><code id="prompt1">自分の気持ちがなんだかモヤモヤしています。
+何に引っかかっているのか、うまく言葉にできません。
+はっきり答えられなくてもいいので、私が答えやすいように、やさしく少しずつ質問してくれませんか？</code></pre>
+                <button class="copy-btn" data-target="prompt1">コピー</button>
+            </div>
+            <div class="prompt-item">
+                <h3>② やりたいことがぼんやりしているときに</h3>
+                <p>モヤモヤの正体が見えてくると、気持ちに余白が生まれます。</p>
+                <pre><code id="prompt2">今、自分が何に悩んでいるのか、何をしたいのかがぼんやりしています。
+でも何かある気がしていて、整理できたら少しスッキリしそうです。
+はっきり答えられなくてもいいので、やさしく問いかけてくれるとうれしいです。</code></pre>
+                <button class="copy-btn" data-target="prompt2">コピー</button>
+            </div>
+            <div class="prompt-item">
+                <h3>③ アイデアを出したいけど浮かばないときに</h3>
+                <p>「何かやってみたいけど、思いつかない…」そんなときの起爆剤に。</p>
+                <pre><code id="prompt3">何か作ってみたい気持ちはあるのですが、具体的なアイデアがまったくありません。
+普段の生活や、小さなことでもいいので、思いつくきっかけになりそうな問いかけをしてもらえるとうれしいです。</code></pre>
+                <button class="copy-btn" data-target="prompt3">コピー</button>
+            </div>
+        </section>
+
+        <section id="midjourney-srefs" class="card">
+            <h2><span class="icon">🎨</span> Midjourney作画用srefコード集</h2>
+            <p>私のお気に入りのsrefコードです。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>srefコード</th>
+                        <th>スタイル</th>
+                        <th>サンプル画像</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code id="sref1">--sref 885817051</code><button class="copy-btn-small" data-target="sref1">コピー</button></td>
+                        <td>photoreal, black, edgy</td>
+                        <td><img src="images/885817051.webp" alt="Sample for 885817051" class="sref-thumbnail" onclick="openLightbox('images/885817051.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref2">--sref 3456315280</code><button class="copy-btn-small" data-target="sref2">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/3456315280.webp" alt="Sample for 3456315280" class="sref-thumbnail" onclick="openLightbox('images/3456315280.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref3">--sref 1175434735</code><button class="copy-btn-small" data-target="sref3">コピー</button></td>
+                        <td>painterly, blonde, dreamy</td>
+                        <td><img src="images/1175434735.webp" alt="Sample for 1175434735" class="sref-thumbnail" onclick="openLightbox('images/1175434735.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref4">--sref 2496121206 --style raw --s 250</code><button class="copy-btn-small" data-target="sref4">コピー</button></td>
+                        <td>minimal, white, calm</td>
+                        <td><img src="images/--sref 2496121206 --style raw --s 250.webp" alt="Sample for 2496121206" class="sref-thumbnail" onclick="openLightbox('images/--sref 2496121206 --style raw --s 250.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref5">--sref 913825167</code><button class="copy-btn-small" data-target="sref5">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/913825167.webp" alt="Sample for 913825167" class="sref-thumbnail" onclick="openLightbox('images/913825167.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref6">--sref 3408670632</code><button class="copy-btn-small" data-target="sref6">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/3408670632.webp" alt="Sample for 3408670632" class="sref-thumbnail" onclick="openLightbox('images/3408670632.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref7">--sref 3673065378</code><button class="copy-btn-small" data-target="sref7">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/3673065378.webp" alt="Sample for 3673065378" class="sref-thumbnail" onclick="openLightbox('images/3673065378.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref8">--sref 3205753551 --v 7.0</code><button class="copy-btn-small" data-target="sref8">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/3205753551.webp" alt="Sample for 3205753551" class="sref-thumbnail" onclick="openLightbox('images/3205753551.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref9">--s 250 --sref 3205753551 --v 7.0</code><button class="copy-btn-small" data-target="sref9">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/--s 250 --sref 3205753551.webp" alt="Sample for --s 250 --sref 3205753551" class="sref-thumbnail" onclick="openLightbox('images/--s 250 --sref 3205753551.webp')"></td>
+                    </tr>
+                    <tr>
+                        <td><code id="sref10">--sref 3781080376 --s 250 --v 7.0</code><button class="copy-btn-small" data-target="sref10">コピー</button></td>
+                        <td></td>
+                        <td><img src="images/--sref 3781080376 --s 250.webp" alt="Sample for 3781080376" class="sref-thumbnail" onclick="openLightbox('images/--sref 3781080376 --s 250.webp')"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+
+        <section id="suzuri-guide" class="card">
+            <h2><span class="icon">👕</span> SUZURI 2025年春：売れるデザイン＆企画ガイド</h2>
+            <p>公式アナウンスと直近セール情報をベースに、これから作品を作る方向けにまとめました。</p>
+            
+            <h3>1. 今すぐ狙うべきアイテム</h3>
+            <ul>
+                <li><strong>ビッグシルエットT / ヘビーウェイトT</strong><br>11周年BIGセールで最大 1,000 円引き。主力カテゴリなので販売量が多い。<br><a href="https://suzuri.jp/media/journal_11th-bigsale/" target="_blank">参考リンク</a></li>
+                <li><strong>刺しゅうフリースジャケット</strong><br>2025/3/5 登場の新定番。ミニロゴ・1〜2色刺しゅうが推奨。<br><a href="https://suzuri.jp/media/2025/03/05/embroidered-fleece-jacket/" target="_blank">参考リンク</a></li>
+                <li><strong>ステッカー／缶バッジ</strong><br>低単価＆100 円引き枠でまとめ買いされやすい。</li>
+                <li><strong>定型アクリルキーホルダー</strong><br>iOS アプリで“スマホ完結”デザインが可能。<br><a href="https://suzuri.jp/media/2025/03/26/ios-editor-keyholder/" target="_blank">参考リンク</a></li>
+            </ul>
+
+            <h3>2. デザイン構成のコツ</h3>
+            <ul>
+                <li><strong>ワンポイント × 2色以内</strong> — コストを抑えつつ高見え。</li>
+                <li><strong>1モチーフ + 短コピー</strong> — スマホのサムネで瞬時に伝わる。</li>
+                <li><strong>低単価 → 高単価の階段設計</strong> — ステッカー → アクキー → T シャツ → ジャケット。</li>
+            </ul>
+
+            <h3>3. 企画例</h3>
+            <ul>
+                <li><strong>梅雨入り（6 月）</strong><br>モチーフ：カエル × レインコート<br>配色：ミント & パープルグレー<br>展開：ステッカー → ドライＴシャツ</li>
+                <li><strong>レトロ喫茶ブーム</strong><br>モチーフ：ゆる動物 × クリームソーダ<br>配色：ソーダグリーン & 赤チェリー<br>展開：胸ワンポイント刺しゅうＴ + 背面ビッグプリントＴ</li>
+                <li><strong>旅行・インバウンド</strong><br>モチーフ：ミニロボ × ご当地名物<br>展開：アクキー 6 色セット → ビッグＴ → トート</li>
+            </ul>
+
+            <h3>4. 制作チェックリスト</h3>
+            <ul class="checklist">
+                <li>ロゴ／線画を <strong>太線 1 色</strong> で 5 種作成（刺しゅう対応）</li>
+                <li>アクキーを <strong>色替え 6 パターン</strong> 量産（iOS アプリで 10 分）</li>
+                <li>ステッカーを <strong>背景透過 PNG + 白フチ</strong> で書き出し</li>
+                <li>セール前日に SNS で値引き告知</li>
+                <li>VRChat や 3D 派生商品の可能性を検討</li>
+            </ul>
+
+            <h3>5. 投稿用ハッシュタグ例</h3>
+            <p class="hashtags"><code>#SUZURI</code> <code>#Tシャツ</code> <code>#アクリルキーホルダー</code> <code>#ステッカー</code> <code>#ゆるキャラ</code> <code>#レトロポップ</code> <code>#クリームソーダ</code> <code>#梅雨</code></p>
+            
+            <h3>まとめ</h3>
+            <p>セール対象＝売れ筋 と心得て優先的に制作。ワンポイント × 質感 で差別化し、原価を抑えて高見えを狙う。低単価でファンを呼び込み、高単価で利益を回収 する階段戦略が王道。まずは「刺しゅうロゴＴ」と「定型アクキー」のセットから始めてみましょう！</p>
+        </section>
+
+        <section id="chrome-extension" class="card">
+            <h2><span class="icon">✨</span>【2025/07/10追加】Chrome拡張機能・要件定義書</h2>
+            <p>ブラウザに、ブックマークとは別に一時保存できる拡張機能を作りました。拡張機能そのものではなく、作成の元になった要件定義書をお渡しします。</p>
+            <h3>こんな拡張機能が作れます</h3>
+            <ul>
+                <li><strong><strong>直感的なドラッグ＆ドロップ保存:</strong> <code>Altキー</code>を押しながら右にドラッグするだけで、ページを「あとで読む」リストに追加できます。</li>
+                <li><strong>スマートなサイドバー表示:</strong> マウスをブラウザの右端に持っていくと、保存したページリストが自動で出現します。</li>
+                <li><strong>シンプルでミニマルなデザイン:</strong> 閲覧の邪魔にならないクリーンなデザインです。</li>
+                <li><strong>手軽なアクセスと管理:</strong> リスト内の項目クリックでページを開き、不要なページは簡単に削除できます。</li>
+            </ul>
+            <a href="要件定義書.zip" class="button" download>要件定義書をダウンロード</a>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 [あなたの名前またはサイト名]. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Markup -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <button id="backToTopBtn" title="コンテンツ一覧へ">
+        ↑ コンテンツ一覧へ
+    </button>
+
+    <script>
+        function copyToClipboard(targetId) {
+            const targetElement = document.getElementById(targetId);
+            let textToCopy;
+
+            if (targetElement.tagName === 'CODE') {
+                textToCopy = targetElement.innerText;
+            } else {
+                // For pre elements, get the text content directly
+                textToCopy = targetElement.textContent;
+            }
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('コピーしました！');
+            }).catch(err => {
+                console.error('コピーに失敗しました', err);
+            });
+        }
+
+        // Lightbox functions
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = imageSrc;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to Top Button logic
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const contentsList = document.getElementById('contents-list');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > contentsList.offsetTop + contentsList.offsetHeight) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            contentsList.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        // Attach copy event listeners to buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.copy-btn, .copy-btn-small').forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+                    copyToClipboard(targetId);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
