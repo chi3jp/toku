@@ -34,7 +34,11 @@
         >よりメルマガにご登録いただき、誠にありがとうございます！<br />こちらは、ご登録いただいた方限定の特典コンテンツページです。
       </p>
 
-      <section id="guidelines" class="card guidelines-card">
+      <section
+        id="guidelines"
+        class="card guidelines-card section-block"
+        data-group="ご利用前に"
+      >
         <h2><span class="icon">📜</span> ご利用にあたってのお願い</h2>
         <p>
           この特典コンテンツは
@@ -66,23 +70,76 @@
         </p>
       </section>
 
-      <nav class="toc" id="contents-list">
-        <h2>コンテンツ一覧</h2>
-        <ul>
-          <li><a href="#ai-prompts">AIとの対話プロンプト集</a></li>
-          <li><a href="#midjourney-srefs">Midjourney srefコード集</a></li>
-          <li><a href="#suzuri-guide">SUZURI 売れるデザイン＆企画ガイド</a></li>
-          <li><a href="#chrome-extension">Chrome拡張機能「SideTray」</a></li>
-          <li>
-            <a href="#midjourney-download-extension"
-              >Midjourney画像一括ダウンロードChrome拡張機能（ポップアップ）</a
-            >
-          </li>
-          <li><a href="#midjourney-direct-picker">Midjourney Direct Picker</a></li>
-        </ul>
-      </nav>
+      <section class="quick-access" aria-label="クイックアクセス">
+        <h2>すぐにアクセス</h2>
+        <div class="quick-groups">
+          <div class="quick-group">
+            <h3>プロンプト</h3>
+            <div class="quick-list">
+              <a class="quick-card" href="#ai-prompts">
+                <span class="quick-card-icon">🗨️</span>
+                <span class="quick-content">
+                  <span class="quick-title">AIとの対話プロンプト集</span>
+                  <span class="quick-label">迷った気持ち整理のテンプレ</span>
+                </span>
+              </a>
+            </div>
+          </div>
 
-      <section id="ai-prompts" class="card">
+          <div class="quick-group">
+            <h3>Midjourney</h3>
+            <div class="quick-list">
+              <a class="quick-card" href="#midjourney-srefs">
+                <span class="quick-card-icon">🎨</span>
+                <span class="quick-content">
+                  <span class="quick-title">Midjourney srefコード集</span>
+                  <span class="quick-label">お気に入りのテイストを即コピー</span>
+                </span>
+              </a>
+              <a class="quick-card" href="#midjourney-direct-picker">
+                <span class="quick-card-icon">🧩</span>
+                <span class="quick-content">
+                  <span class="quick-title">Midjourney Direct Picker</span>
+                  <span class="quick-label">生成画像を選んで一括保存</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="quick-group">
+            <h3>Chrome拡張</h3>
+            <div class="quick-list">
+              <a class="quick-card" href="#chrome-extensions">
+                <span class="quick-card-icon">🧰</span>
+                <span class="quick-content">
+                  <span class="quick-title">拡張機能 一覧</span>
+                  <span class="quick-label">インストール手順と全ツール</span>
+                </span>
+              </a>
+              <a class="quick-card" href="#chrome-extension">
+                <span class="quick-card-icon">✨</span>
+                <span class="quick-content">
+                  <span class="quick-title">SideTray</span>
+                  <span class="quick-label">情報スナップ保存ツール</span>
+                </span>
+              </a>
+              <a class="quick-card" href="#design-stock">
+                <span class="quick-card-icon">🗂️</span>
+                <span class="quick-content">
+                  <span class="quick-title">Design Stock</span>
+                  <span class="quick-label">デザイン参考のストックアプリ</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="ai-prompts"
+        class="card section-block"
+        data-group="AIプロンプト"
+      >
         <h2>
           <span class="icon">🗨️</span>
           やりたいことが見えてくるAIとの対話プロンプト集
@@ -117,7 +174,11 @@
         </div>
       </section>
 
-      <section id="midjourney-srefs" class="card">
+      <section
+        id="midjourney-srefs"
+        class="card section-block"
+        data-group="Midjourney"
+      >
         <h2><span class="icon">🎨</span> Midjourney作画用srefコード集</h2>
         <p>私のお気に入りのsrefコードです。</p>
         <table>
@@ -321,7 +382,11 @@
         </table>
       </section>
 
-      <section id="suzuri-guide" class="card">
+      <section
+        id="suzuri-guide"
+        class="card section-block"
+        data-group="SUZURI"
+      >
         <h2>
           <span class="icon">👕</span> SUZURI
           2025年春：売れるデザイン＆企画ガイド
@@ -428,125 +493,132 @@
         </p>
       </section>
 
-      <section id="chrome-extension" class="card">
+      <section
+        id="chrome-extensions"
+        class="card section-block"
+        data-group="Chrome拡張"
+      >
         <h2>
-          <span class="icon">✨</span
-          >【2025/07/24更新】Chrome拡張機能「SideTray」
+          <span class="icon">🧰</span> Chrome拡張機能で制作をサポート
         </h2>
-        <p>ブラウザに、ブックマークとは別に一時保存できる拡張機能です。</p>
-        <p>
-          詳しい開発背景は<a
-            href="https://open.substack.com/pub/chi3/p/81-aichrome?r=5jen05&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
-            target="_blank"
-            >こちらの記事</a
-          >で、<strong
-            >昨日（7/24）のアップデート内容は<a
-              href="https://open.substack.com/pub/chi3/p/96-ai?r=5jen05&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
-              target="_blank"
-              >こちらの記事</a
-            >で詳しく解説しています。</strong
-          >ぜひ合わせてご覧ください。
-        </p>
-        <h3>主な機能</h3>
-        <ul>
-          <li>
-            <strong>ドラッグ可能なフローティングアイコン:</strong>
-            画面の右上に小さなアイコンが表示され、好きな場所にドラッグ＆ドロップで移動できます。位置は記憶されます。
-          </li>
-          <li>
-            <strong>クリックでサイドバー表示:</strong>
-            アイコンをクリックすると、保存したページやテキストの一覧がサイドバーに表示されます。Escキーやサイドバーの外側をクリックすれば非表示にできます。
-          </li>
-          <li>
-            <strong>ページ全体の簡単保存:</strong>
-            <code>Altキー</code
-            >を押しながらアイコンにマウスを近づけるか、クリックするだけで、現在開いているページを保存します。
-          </li>
-          <li>
-            <strong>選択テキストのハイライト保存:</strong>
-            保存したいテキストを選択した状態でページを保存すると、その部分だけをハイライトとして保存できます。「後で読みたい」一文やキーワードの記録に便利です。
-          </li>
-          <li>
-            <strong>シンプルで直感的な管理:</strong>
-            保存した項目をクリックすれば元のページに移動し、不要なものは簡単に削除できます。
-          </li>
-        </ul>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1NEfU23JG7ko9HWAtXRzubCEM6dP5xTFa"
-          class="button"
-          >拡張機能（v1.1）をダウンロード</a
-        >
-        <details class="install-guide">
-          <summary>拡張機能のインストール方法</summary>
+        <div class="install-callout">
+          <h3>インストール手順</h3>
           <ol>
-            <li>上のボタンからzipファイルをダウンロードし、解凍します。</li>
-            <li>
-              Chromeブラウザで、アドレスバーに
-              <code>chrome://extensions</code>
-              と入力して拡張機能管理ページを開きます。
-            </li>
-            <li>
-              ページの右上にある「デベロッパーモード」のスイッチをオンにします。
-            </li>
-            <li>
-              左上に表示される「パッケージ化されていない拡張機能を読み込む」ボタンをクリックします。
-            </li>
-            <li>
-              先ほど解凍したフォルダを選択すると、インストールが完了します。
-            </li>
+            <li>ダウンロードボタンから zip ファイルを取得し、解凍します。</li>
+            <li>Chrome で <code>chrome://extensions</code> を開き、拡張機能管理ページを表示します。</li>
+            <li>右上の「デベロッパーモード」をオンにします。</li>
+            <li>「パッケージ化されていない拡張機能を読み込む」をクリックし、解凍したフォルダを選択します。</li>
+            <li>ピン留めやショートカットを設定して、すぐに使い始めましょう。</li>
           </ol>
-        </details>
-      </section>
+        </div>
+        <div class="extension-grid">
+          <article id="chrome-extension" class="extension-card">
+            <div class="extension-header">
+              <h3>SideTray</h3>
+              <span class="extension-tag">情報整理</span>
+            </div>
+            <p>
+              ブラウザに一時保存用のトレイを追加し、気になるページやテキストをサッと控えておける拡張機能です。
+            </p>
+            <ul>
+              <li>
+                <strong>ドラッグ可能なフローティングアイコン:</strong>
+                画面の邪魔にならない位置にドラッグ＆固定可能。
+              </li>
+              <li>
+                <strong>クリックでサイドバー表示:</strong>
+                保存したカードを一覧し、Escキーや外側クリックですぐ閉じられます。
+              </li>
+              <li>
+                <strong>ページ全体・選択テキストの保存:</strong>
+                <code>Alt</code> キーを押しながら操作するとページ全体、選択範囲だけの保存も簡単です。
+              </li>
+            </ul>
+            <p class="extension-note">
+              開発背景やアップデートの詳細は
+              <a
+                href="https://open.substack.com/pub/chi3/p/81-aichrome?r=5jen05&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
+                target="_blank"
+                >こちらの記事</a
+              >と
+              <a
+                href="https://open.substack.com/pub/chi3/p/96-ai?r=5jen05&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+                target="_blank"
+                >アップデートレポート</a
+              >で紹介しています。
+            </p>
+            <div class="extension-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1TfGINnunCNGI4alhUrmTFImh8uARde7X"
+                class="button"
+                download
+                >拡張機能（v1.1）をダウンロード</a
+              >
+            </div>
+          </article>
 
-      <!-- 新しいMidjourney画像一括ダウンロードChrome拡張機能のセクション -->
-      <section id="midjourney-download-extension" class="card">
-        <h2>
-          <span class="icon">🖼️</span
-          >【2025/07/24追加】Midjourney画像一括ダウンロードChrome拡張機能（ポップアップ）
-        </h2>
-        <p>
-          Midjourneyで生成した画像を、まとめて簡単にダウンロードできるChrome拡張機能です。作業効率を大幅にアップさせます。
-        </p>
-        <h3>主な機能</h3>
-        <ul>
-          <li>
-            <strong>一括ダウンロード:</strong>
-            Midjourneyのギャラリーページから、表示されている画像や動画をまとめてダウンロードできます。
-          </li>
-          <li>
-            <strong>シンプルな操作性:</strong>
-            ダウンロードしたい画像や動画を選択し、ワンクリックでダウンロードが開始されます。
-          </li>
-        </ul>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1TtOAKUN3LsYf1yGyCRxQmSNStZq_CR3a"
-          class="button"
-          >拡張機能をダウンロード</a
-        >
-      </section>
+          <article id="design-stock" class="extension-card extension-featured">
+            <div class="extension-header">
+              <h3>Design Stock</h3>
+              <span class="extension-tag">デザイン収集</span>
+            </div>
+            <div class="extension-media">
+              <img
+                src="images/designstock.jpg"
+                alt="Design Stock のスクリーンショット"
+              />
+            </div>
+            <p>
+              表示中のサイトをワンクリックでアーカイブし、スクリーンショット・URL・タイトル・カラーパレットを自動保存。タグは手動で整理でき、<strong>ウェブ制作の参考にしたいデザインを逃さずストック</strong>できます。
+            </p>
+            <ul>
+              <li>保存したサイトは一覧で管理し、タグ・テキスト・カラーで横断検索が可能。</li>
+              <li>バックアップとインポートに対応し、複数環境でも同じライブラリを再現できます。</li>
+              <li>
+                記事「<a href="https://open.substack.com/pub/chi3/p/153-aiweb?r=5jen05&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true" target="_blank">Design Stockが生まれた背景と使い方</a>」で活用事例を紹介しています。
+              </li>
+            </ul>
+            <div class="extension-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1FHuk_gnkcbv9DbPZ4_GtTx0-BQyt7ges"
+                class="button"
+                download
+                >アプリをダウンロード</a
+              >
+            </div>
+          </article>
 
-      <!-- Midjourney Direct Picker セクション -->
-      <section id="midjourney-direct-picker" class="card">
-        <h2>
-          <span class="icon">🧩</span> Midjourney Direct Picker
-        </h2>
-        <img
-          src="images/137-0.jpg"
-          alt="Midjourney Direct Picker"
-          style="max-width: 100%; height: auto; border-radius: 8px; margin: 0.5rem 0 1rem;"
-        />
-        <p>
-          この拡張機能をインストールするだけで、Midjourney の Create ページに表示される画像の右上に ✓ が付きます。<br />
-          クリックすると選択状態になり、画面下のダウンロードボタンを押すと、選択した画像を一括でダウンロードできます。<br />
-          ダウンロード先には「midjourney+日付」というフォルダが自動的に作成され、その中に保存されます。
-        </p>
-        <a
-  href="https://drive.google.com/uc?export=download&id=1bcea0XG667oxJX5lyupglh52fsjMrbh1"
-  class="button"
-  download>
-  ダウンロード
-        </a>
-
+          <article
+            id="midjourney-direct-picker"
+            class="extension-card"
+          >
+            <div class="extension-header">
+              <h3>Midjourney Direct Picker</h3>
+              <span class="extension-tag">画像ダウンロード</span>
+            </div>
+            <div class="extension-media">
+              <img
+                src="images/137-0.jpg"
+                alt="Midjourney Direct Picker"
+              />
+            </div>
+            <p>
+              Midjourney の Create ページで表示中の画像にチェックを付け、選んだものだけをまとめてダウンロードできる拡張機能です。
+            </p>
+            <ul>
+              <li>画像右上に ✓ アイコンが表示され、必要なものだけ選択可能。</li>
+              <li>ダウンロードを実行すると「midjourney+日付」フォルダが自動生成され、整理も簡単です。</li>
+            </ul>
+            <div class="extension-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1bcea0XG667oxJX5lyupglh52fsjMrbh1"
+                class="button"
+                download
+                >ダウンロード</a
+              >
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -598,8 +670,10 @@
         document.getElementById("lightbox").style.display = "none";
       }
 
-      // Smooth scroll for TOC links
-      document.querySelectorAll('.toc a[href^="#"]').forEach((anchor) => {
+      // Smooth scroll for quick access links
+      document
+        .querySelectorAll('.quick-access a[href^="#"]')
+        .forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
 
@@ -607,16 +681,17 @@
             behavior: "smooth",
           });
         });
-      });
+        });
 
       // Back to Top Button logic
       const backToTopBtn = document.getElementById("backToTopBtn");
-      const contentsList = document.getElementById("contents-list");
+      const quickAccessSection = document.querySelector(".quick-access");
 
       window.addEventListener("scroll", () => {
         if (
+          quickAccessSection &&
           window.scrollY >
-          contentsList.offsetTop + contentsList.offsetHeight
+            quickAccessSection.offsetTop + quickAccessSection.offsetHeight
         ) {
           backToTopBtn.style.display = "block";
         } else {
@@ -626,9 +701,11 @@
 
       backToTopBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        contentsList.scrollIntoView({
-          behavior: "smooth",
-        });
+        if (quickAccessSection) {
+          quickAccessSection.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
       });
 
       // Attach copy event listeners to buttons
