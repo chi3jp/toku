@@ -132,6 +132,19 @@
               </a>
             </div>
           </div>
+
+          <div class="quick-group">
+            <h3>SEO</h3>
+            <div class="quick-list">
+              <a class="quick-card" href="#seo-checklist">
+                <span class="quick-card-icon">📈</span>
+                <span class="quick-content">
+                  <span class="quick-title">SEOチェックリスト</span>
+                  <span class="quick-label">AI検索対策付きの完全版</span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -494,6 +507,141 @@
       </section>
 
       <section
+        id="seo-checklist"
+        class="card section-block"
+        data-group="SEO"
+      >
+        <h2>
+          <span class="icon">📈</span> SEOチェックリスト（AI検索対策込み）
+        </h2>
+        <p>
+          Webページ制作から公開後の運用、そしてAI検索で拾われるための工夫までを一気に振り返れるチェックリストです。必要なときに開いて、まとめてコピーしてご活用ください。
+        </p>
+        <button
+          class="toggle-btn"
+          type="button"
+          data-target="seo-checklist-panel"
+          aria-expanded="false"
+          aria-controls="seo-checklist-panel"
+        >
+          コンテンツを開く
+        </button>
+        <div id="seo-checklist-panel" class="collapsible" hidden>
+          <button class="copy-btn" data-target="seo-checklist-text">コピー</button>
+          <pre><code id="seo-checklist-text">【SEOチェックリスト（汎用）—AI検索対策込み】
+
+====================
+作成時（Webページ制作中）にできるSEO対策
+====================
+
+■ 技術（Technical）
+- URL設計：短く意味のある英単語、不要パラメータ排除、正規URL（&lt;link rel="canonical"&gt;）
+- メタ情報：固有の&lt;title&gt;（32文字前後）と&lt;meta name="description"&gt;（80–120文字）
+- 見出し構造：1ページ1つの&lt;h1&gt;、論理的なh2/h3階層
+- 画像最適化：WebP/AVIF、width/height指定、loading="lazy"、適切なalt
+- パフォーマンス（Core Web Vitals）：LCP/INP/CLSを意識（画像の先読み/遅延、CSS縮小、JS分割、フォント最適化）
+- 内部リンク：語句リンク・パンくず（構造化データ対応）、関連導線を各所に
+- モバイル対応：レスポンシブ、タップ領域、フォームUX（入力補助属性）
+- インデックス制御：robots.txt / meta robots、noindex誤設定の確認
+- サイトマップ：XML（通常＋画像/動画）、Search Console登録
+- 国際化・多言語：hreflang、地域ターゲット（ローカルならNAP表記の統一）
+- 構造化データ（JSON-LD）：Organization / WebSite / BreadcrumbList、LocalBusiness、FAQPage / HowTo / Product / Article / VideoObject 等
+- エラーハンドリング：404/410、301リダイレクト（旧URL→新URL）
+- セキュリティ：HTTPS/HTTP2、基本ヘッダー（HSTS, CSPは可能な範囲で）
+- アクセシビリティ：ランドマーク、代替テキスト、フォームラベル
+
+■ コンテンツ（On-page）
+- 検索意図に合うページ目的（情報/取引/比較/ローカル）を明確化
+- キーワードの網羅と自然な配置（タイトル/見出し/本文/代替テキスト/アンカーテキスト）
+- 1ページ1テーマ原則＋重複/薄い内容の回避
+- E-E-A-T補強：運営者/著者プロフィール、実績、顧客の声、根拠リンク
+- 画像・動画の文脈テキスト、字幕や文字起こし（Video/Audio）
+
+====================
+作成時以外（公開後・運用）にできるSEO対策
+====================
+
+■ コンテンツ運用
+- 記事やLPの追加：入門/比較/事例/FAQ/トラブルシュート
+- 既存ページの定期リライト：最新化・事例追記・内部リンク強化
+- 競合ギャップ分析：上位ページの見出し/網羅性/体験談差分を埋める
+- FAQ整備：検索ログ・問い合わせから継続拡充（FAQPage構造化データも）
+
+■ 外部シグナル
+- 被リンク：一次情報（調査/データ/テンプレ/ツール）公開、業界寄稿、メディア/コミュニティ露出
+- ブランド検索増加：SNS/メール/オフライン連動（名指し検索を増やす）
+- ローカルSEO：Googleビジネスプロフィール最適化、最新投稿・写真・Q&amp;A、口コミ獲得＆返信
+
+■ テクニカル運用
+- Search Console/Analytics監視：クエリ・掲載順位・CTR/INP/LCP/エラー
+- クローラビリティ：内部リンク網の見直し、孤立ページ解消、サイトマップ更新
+- ログ分析：クロール頻度/滞留箇所、不要パラメータ除外
+- A/Bテスト：タイトル/導入文/CTA位置でCTR・CVRを改善
+- ページ速度の継続改善：画像CDN、キャッシュ、クリティカルCSS、JS削減
+
+■ ガバナンス
+- コンテンツ更新ルール：担当・更新周期・品質基準・評価指標
+- 法令/表現チェック：薬機/景表/著作権等の遵守
+
+====================
+AI検索（SGE / AI Overviews / Perplexity 等）への対策
+====================
+
+■ 回答されやすい形式
+- 明確なQ&amp;A/FAQ構造（質問→結論→根拠→手順/注意）
+- スニペット化しやすい記述：結論先出し、数字、箇条書き、表
+- How-to/手順/チェックリスト/ベストプラクティスなど“完成形の型”を増やす
+- 用語定義・比較表・計算式・テンプレの提供（引用価値UP）
+
+■ 機械可読性の向上
+- 構造化データ（FAQPage/HowTo/Product/Recipe/LocalBusiness/Article 等）
+- 表・リスト・見出しを正しいHTMLでマークアップ
+- 画像の代替テキスト＋キャプション
+- オリジナル図版/データにキャプション＋ソース明記
+
+■ 権威性・信頼性（E-E-A-T）
+- 著者情報（専門性/資格/実績）と最終更新日
+- 一次情報（独自調査・事例・統計・スクリーンショット）
+- 参照・出典への適切な外部リンク
+- 組織情報の明確化（所在地/連絡先/運営者/ポリシー/免責）
+
+■ 発見性の向上
+- トピッククラスタ設計：ハブページ＋関連詳細記事群で内部リンク
+- 「○○とは」「○○のやり方」「○○の比較」「○○の料金」「○○の失敗例」等、検索意図別に面を構成
+- マルチモーダル：動画/音声を同ページに埋め込み＋文字起こし
+
+■ 最新性と継続性
+- 更新日の見える化と実際の内容更新
+- 速報＋深掘りの二層構成（要約→後で検証/根拠追加）
+
+■ 生成AIに引用されやすくする工夫
+- ブランド名・固有表現の統一、自己紹介の1〜2行を用意
+- オープンに使えるデータ/テンプレを公開（引用動機を作る）
+- 英語ページ/要約の併設（多言語AIへの露出を増やす）
+
+====================
+優先度の高い初期セット &amp; 運用ルーチン
+====================
+
+■ 初期セット（まずはここから）
+1) タイトル/ディスクリプション/見出し最適化
+2) LocalBusiness/FAQの構造化データ
+3) 重要ページの内部リンク網（ハブ→子ページ）
+4) 画像のWebP＋alt＋LCP画像の最適化
+5) Googleビジネスプロフィール整備＋レビュー獲得
+6) 「よくある質問」「料金」「比較」「アクセス」「問い合わせ」の整備
+7) Search Console登録＆XMLサイトマップ送信
+
+■ 月次ルーチン
+- CTRが低いページのタイトル/導入をA/Bテスト
+- 新トピックをFAQ/ブログへ反映
+- 競合の新見出し/事例をモニタリングして不足分を追補
+- 速度/INP確認、不要JS削減、画像再圧縮
+- 口コミ/被リンク施策を毎月1本（寄稿/資料公開/コラボ等）</code></pre>
+        </div>
+      </section>
+
+      <section
         id="chrome-extensions"
         class="card section-block"
         data-group="Chrome拡張"
@@ -718,6 +866,33 @@
               copyToClipboard(targetId);
             });
           });
+
+        document.querySelectorAll(".toggle-btn").forEach((button) => {
+          button.addEventListener("click", () => {
+            const targetId = button.dataset.target;
+            if (!targetId) {
+              return;
+            }
+
+            const panel = document.getElementById(targetId);
+            if (!panel) {
+              return;
+            }
+
+            const willOpen = panel.hasAttribute("hidden");
+
+            if (willOpen) {
+              panel.removeAttribute("hidden");
+            } else {
+              panel.setAttribute("hidden", "");
+            }
+
+            button.setAttribute("aria-expanded", willOpen.toString());
+            button.textContent = willOpen
+              ? "コンテンツを閉じる"
+              : "コンテンツを開く";
+          });
+        });
       });
     </script>
   </body>

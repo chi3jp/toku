@@ -343,6 +343,30 @@ pre code {
   padding: 0.45rem 0.9rem;
 }
 
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.2rem;
+  padding: 0.65rem 1.3rem;
+  border: none;
+  border-radius: 999px;
+  background: rgba(31, 36, 48, 0.08);
+  color: var(--color-heading);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(31, 36, 48, 0.12);
+}
+
+.collapsible {
+  margin-top: 1.5rem;
+}
+
 .badge-new {
   display: inline-block;
   margin-left: 0.5rem;
